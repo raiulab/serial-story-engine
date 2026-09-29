@@ -1,0 +1,17 @@
+{
+  "name": "serial-story-engine",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace client",
+    "dev:server": "npm run dev --workspace server",
+    "tailscale:serve": "tailscale serve --https=443 http://127.0.0.1:5173",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server",
+    "test": "node --test server/test/*.test.js"
+  }
+}

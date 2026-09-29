@@ -1,0 +1,12 @@
+.DS_Store
+**/.DS_Store
+node_modules/
+client/dist/
+db/
+generated/
+uploads/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
